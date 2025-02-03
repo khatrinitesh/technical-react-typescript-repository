@@ -1,0 +1,12 @@
+@layer btnPrimary{
+    .btnPrimary{
+        padding:0 1rem;
+        height: 40px;
+        background-color:var(--tertiarycolor);
+        color:#fff;
+        border-radius: 5px;
+        cursor: pointer;
+        outline: none;
+        border:0;
+    }
+}

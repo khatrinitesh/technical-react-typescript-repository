@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+*,::before,::after{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+:root{
+  --primarycolor:#b57f93;
+  --secondarycolor:#c89eaf;
+  --tertiarycolor:#704450;
+  --whitecolor:#ffffff;
+}
+
+.bodyWrapper,.rootWrapper{
+  height: 100vh;
+  min-height: 100vh;
+  overflow-x: hidden;
+  margin:0;
+  padding:0;
+  background-color: var(--secondarycolor);
+}
+
+.linkHref{
+  color:var(--tertiarycolor);
+  font-weight: 700;
+  font-size: 18px;
+}

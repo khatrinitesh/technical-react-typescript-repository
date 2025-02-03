@@ -1,0 +1,6 @@
+.headTitle{
+    color:var(--tertiarycolor);
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
