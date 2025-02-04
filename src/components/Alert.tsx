@@ -2,11 +2,19 @@ import React from 'react';
 import { UseAlertStore } from '../store/useAlertStore';
 import { motion } from 'framer-motion';
 import './Alert.css';
+import { useNavigate } from 'react-router-dom';
+import BtnPrimary from './BtnPrimary';
 
 const Alert:React.FC = () => {
     const {isAlertOpen,alertMsg,hideAlert,showAlert} = UseAlertStore();
+    const navigate = useNavigate();
+    const handleClick = () => {
+      navigate('/')
+    }
   return (
     <>
+     <BtnPrimary onClick={handleClick}>Back</BtnPrimary>
+     <br />
      <button
         onClick={() => showAlert('This is a success alert!')}
         style={{

@@ -14,10 +14,34 @@ const List = () => {
          <Link className='linkHref' to="alert">Alert button</Link>
         </li>
         <li>
-         <Link className='linkHref' to=""></Link>
+         <Link className='linkHref' to="animationicon">Animation Icons</Link>
         </li>
         <li>
-         <Link className='linkHref' to=""></Link>
+         <Link className='linkHref' to="animationbtn">Animated buttons</Link>
+        </li>
+        <li>
+         <Link className='linkHref' to="animationsearch">Animated Search</Link>
+        </li>
+        <li>
+         <Link className='linkHref' to="arrow">Arrow</Link>
+        </li>
+        <li>
+         <Link className='linkHref' to="autocomplete">Autocomplete</Link>
+        </li>
+        <li>
+         <Link className='linkHref' to="avatar">AvatarImages</Link>
+        </li>
+        <li>
+         <Link className='linkHref' to="bigheader">Big Header</Link>
+        </li>
+        <li>
+         <Link className='linkHref' to="blackwhiteimage">Black and White Image</Link>
+        </li>
+        <li>
+         <Link className='linkHref' to="changebgcolor">Change Background Color</Link>
+        </li>
+        <li>
+         <Link className='linkHref' to="changebgscroll">Change Background Scroll Color</Link>
         </li>
       </ul>
     </>
