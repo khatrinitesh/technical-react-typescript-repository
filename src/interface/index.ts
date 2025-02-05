@@ -1,4 +1,5 @@
 // Define an interface for each accordion item
+import { DEFAULT_FORM_STATE } from '../constants/checkoutformdata';
 import Autocomplete from './../components/Autocomplete';
 export interface AccordionItem {
   title: string;
@@ -75,4 +76,51 @@ export interface ChangeBgStore{
 export const ChangeBgScrollStore{
   background:string;
   setBackground:(color:string) => void;
+}
+
+export interface PreloaderStore{
+  loading:boolean;
+  setLoading:(loading:boolean) => void;
+}
+
+export interface CharacterCounterStore{
+  text:string;
+  charCount:number;
+  setText:(text:string) => void;
+  updateCharacterCount:() => void; 
+}
+
+export interface ChatMsgStore{
+  id:string;
+  user:string;
+  content:string;
+  timestamp:string;
+}
+
+export interface ChatBoxStore{
+  messages: ChatMsgStore[]; // Array to store messages
+  addMessage: (user: string, content: string) => void; // Function to add a new message
+} 
+
+export interface CheckboxStore{
+  isChecked:boolean; // checkbox state (checked or not)
+  toggleCheckbox:() => void; // function to toggle the checkbox
+}
+
+export interface CheckIsNumericStore{
+  value:string;
+  isNumeric:boolean;
+  setValue:(value:string) => void;
+  checkIfNumeric:() => void;
+}
+
+export interface NumericStore{
+  formData: typeof DEFAULT_FORM_STATE;
+  setFormData: (field: string, value: string) => void; // Function to set form field data
+  validateForm: () => boolean; // Function to validate the form data
+}
+
+export interface CircleStore{
+  isMenuOpen:boolean;
+  toggleMenu:() => void;
 }

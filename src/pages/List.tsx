@@ -43,6 +43,27 @@ const List = () => {
         <li>
          <Link className='linkHref' to="changebgscroll">Change Background Scroll Color</Link>
         </li>
+        <li>
+         <Link className='linkHref' to="preloader">Preloader</Link>
+        </li>
+        <li>
+         <Link className='linkHref' to="character-counter">Character Counter</Link>
+        </li>
+        <li>
+         <Link className='linkHref' to="chat-msg">Chat Message</Link>
+        </li>
+        <li>
+         <Link className='linkHref' to="checkbox">Check Checkbox</Link>
+        </li>
+        <li>
+         <Link className='linkHref' to="checkboxnumeric">Check Value Numeric</Link>
+        </li>
+        <li>
+         <Link className='linkHref' to="checkoutform">Checkout Form</Link>
+        </li>
+        <li>
+         <Link className='linkHref' to="circlemenu">Circle Menu</Link>
+        </li>
       </ul>
     </>
   );

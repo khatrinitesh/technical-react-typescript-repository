@@ -1,0 +1,37 @@
+/* src/CheckoutForm.css */
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .checkout-form div {
+    margin-bottom: 10px;
+  }
+  
+  .checkout-form input {
+    padding: 8px;
+    font-size: 1rem;
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .checkout-form button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .checkout-form button:disabled {
+    background-color: #999;
+  }
+  
+  .checkout-form button:hover:not(:disabled) {
+    background-color: #45a049;
+  }

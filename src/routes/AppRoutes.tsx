@@ -4,6 +4,7 @@ import { createBrowserRouter } from 'react-router-dom';
 
 // pages
 import List from '../pages/List';
+import Loading from '../pages/Loading';
 // components
 import AnimatedBtn from './../components/AnimatedBtn';
 import Accordion from '../components/Accordion';
@@ -17,6 +18,12 @@ import BigHeader from '../components/BigHeader';
 import ImageGallery from '../components/ImageGallery';
 import ChangeBgColor from '../components/ChangeBgColor';
 import ChangeBgScroll from '../components/ChangeBgScroll';
+import CharacterCounter from '../components/CharacterCounter';
+import ChatWindow from '../components/ChatWindow';
+import CheckCheckbox from '../pages/Check-Checkbox';
+import CheckValueIsNumeric from '../components/CheckValueIsNumeric';
+import CheckoutForm from '../components/CheckoutForm';
+import CircleMenuMob from '../components/CircleMenuMob';
 
 const AppRoutes = () => {
   return createBrowserRouter([
@@ -71,8 +78,35 @@ const AppRoutes = () => {
     {
       path:"changebgscroll",
       element:<ChangeBgScroll/>
-    }
-    
+    },
+    {
+      path:"preloader",
+      element:<Loading/>
+    },
+    {
+      path:"character-counter",
+      element:<CharacterCounter/>
+    },
+    {
+      path:"chat-msg",
+      element:<ChatWindow/>
+    },
+    {
+      path:"checkbox",
+      element:<CheckCheckbox/>
+    },
+    {
+      path:"checkboxnumeric",
+      element:<CheckValueIsNumeric/>
+    },
+    {
+      path:"checkoutform",
+      element:<CheckoutForm/>
+    },
+    {
+      path:"circlemenu",
+      element:<CircleMenuMob/>
+    },
   ]);
 }
 
