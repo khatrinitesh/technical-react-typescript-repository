@@ -64,6 +64,9 @@ const List = () => {
         <li>
          <Link className='linkHref' to="circlemenu">Circle Menu</Link>
         </li>
+        <li>
+         <Link className='linkHref' to="glowingstars">Glowing Stars</Link>
+        </li>
       </ul>
     </>
   );

@@ -24,6 +24,7 @@ import CheckCheckbox from '../pages/Check-Checkbox';
 import CheckValueIsNumeric from '../components/CheckValueIsNumeric';
 import CheckoutForm from '../components/CheckoutForm';
 import CircleMenuMob from '../components/CircleMenuMob';
+import GlowingStars from '../components/GlowingStars';
 
 const AppRoutes = () => {
   return createBrowserRouter([
@@ -106,6 +107,10 @@ const AppRoutes = () => {
     {
       path:"circlemenu",
       element:<CircleMenuMob/>
+    },
+    {
+      path:"glowingstars",
+      element:<GlowingStars/>
     },
   ]);
 }

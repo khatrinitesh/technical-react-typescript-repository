@@ -11,6 +11,7 @@
   --secondarycolor:#c89eaf;
   --tertiarycolor:#704450;
   --whitecolor:#ffffff;
+  --blackcolor:#000000;
 }
 
 .bodyWrapper,.rootWrapper{
@@ -19,7 +20,7 @@
   overflow-x: hidden;
   margin:0;
   padding:0;
-  background-color: var(--secondarycolor);
+  background-color: var(--blackcolor);
 }
 
 .linkHref{
