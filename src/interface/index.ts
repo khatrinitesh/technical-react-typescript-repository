@@ -1,6 +1,7 @@
 // Define an interface for each accordion item
 import { DEFAULT_FORM_STATE } from '../constants/checkoutformdata';
 import Autocomplete from './../components/Autocomplete';
+
 export interface AccordionItem {
   title: string;
   content: string;
