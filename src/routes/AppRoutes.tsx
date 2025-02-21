@@ -32,6 +32,7 @@ import BeamPage from '../pages/Beam';
 import GridItem from '../components/GridItem';
 import CanvasReveal from '../components/CanvasReveal';
 import CarRunning from '../components/CarRunning';
+import ColorPicker from '../components/ColorPicker';
 
 const AppRoutes = () => {
   return createBrowserRouter([
@@ -142,6 +143,10 @@ const AppRoutes = () => {
     {
       path:"/car-running",
       element:<CarRunning/>
+    },
+    {
+      path:"/color-picker",
+      element:<ColorPicker/>
     },
   ]);
 }

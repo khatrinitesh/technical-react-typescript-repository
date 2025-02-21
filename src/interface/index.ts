@@ -190,3 +190,8 @@ export interface CarState {
   updateCarPosition: () => void;
   setSpeed: (speed: number) => void;
 }
+
+export interface ColorPickerState{
+   selectedColor:string;
+   setColor:(color:string)=> void;
+}

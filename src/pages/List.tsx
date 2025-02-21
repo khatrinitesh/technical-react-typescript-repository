@@ -85,6 +85,9 @@ const List = () => {
         <li>
          <Link className='linkHref' to="/car-running">Car Running</Link>
         </li>
+        <li>
+         <Link className='linkHref' to="/color-picker">Color Picker</Link>
+        </li>
       </ul>
     </>
   );
