@@ -1,0 +1,21 @@
+.card {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card-inner {
+    backface-visibility: hidden;
+  }
+  
+  .card-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+  }
+  

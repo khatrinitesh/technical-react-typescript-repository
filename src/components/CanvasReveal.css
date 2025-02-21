@@ -1,0 +1,21 @@
+/* CanvasReveal.css */
+.canvas-container {
+    position: relative;
+    display: inline-block;
+    width: 800px;
+    height: 600px;
+    overflow: hidden; /* Prevent content from going outside the canvas */
+  }
+  
+  canvas {
+    position: absolute;
+    z-index: 1; /* Canvas goes behind the reveal mask */
+  }
+  
+  .reveal-mask {
+    position: absolute;
+    background-color: black;
+    pointer-events: none; /* So the mask doesn't block the mouse events */
+    transition: opacity 0.2s ease;
+  }
+  

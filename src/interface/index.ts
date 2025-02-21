@@ -125,3 +125,68 @@ export interface CircleStore{
   isMenuOpen:boolean;
   toggleMenu:() => void;
 }
+
+export interface CardProps {
+  title: string;
+  content: string;
+  imageUrl: string;
+  className?: string;  // Optional class for styling
+}
+
+export interface PinState{
+  rotationX:number;
+  rotationY:number;
+  setRotation:(x:number,y:number) => void;
+}
+
+export interface Beam{
+  x:number;
+  y:number;
+  direction:number;
+  speed:number;
+}
+
+export interface BgState {
+  beams: Beam[];
+  addBeam: (beam: Beam) => void;
+  updateBeams: () => void;
+  checkCollisions: (x: number, y: number) => boolean;
+}
+
+export interface BeamProps{
+  initialX: number;
+  initialY: number;
+  speed: number;
+  direction: number; // direction in radians
+}
+
+export interface GridItem{
+  id:string;
+  x:number;
+  y:number;
+  width:number;
+  height:number;
+}
+
+export interface GridItemProps{
+  items:GridItem[];
+  addItem:(item:GridItem) => void;
+  removeItem:(id:string) => void;
+  updateItem:(id:string,updatedItem:GridItem) => void;
+}
+
+export interface RevealState {
+  revealWidth: number;
+  revealHeight: number;
+  setRevealDimensions: (width: number, height: number) => void;
+  resetReveal: () => void;
+}
+
+export interface CarState {
+  x: number;
+  isMoving: boolean;
+  speed: number; // Speed of the car in pixels per frame
+  toggleCarMovement: () => void;
+  updateCarPosition: () => void;
+  setSpeed: (speed: number) => void;
+}

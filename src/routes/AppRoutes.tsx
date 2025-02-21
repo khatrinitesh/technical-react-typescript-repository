@@ -25,6 +25,13 @@ import CheckValueIsNumeric from '../components/CheckValueIsNumeric';
 import CheckoutForm from '../components/CheckoutForm';
 import CircleMenuMob from '../components/CircleMenuMob';
 import GlowingStars from '../components/GlowingStars';
+import ThreeCardEffort from '../components/ThreeCardEffort';
+import ThreeDPin from './../components/Pin';
+import Beam from '../components/Beam';
+import BeamPage from '../pages/Beam';
+import GridItem from '../components/GridItem';
+import CanvasReveal from '../components/CanvasReveal';
+import CarRunning from '../components/CarRunning';
 
 const AppRoutes = () => {
   return createBrowserRouter([
@@ -33,84 +40,108 @@ const AppRoutes = () => {
         element:<List/>
     },
     {
-        path:"accordion",
+        path:"/accordion",
         element:<Accordion/>
     },
     {
-      path:"alert",
+      path:"/alert",
       element:<Alert/>
     },
     {
-      path:"animationicon",
+      path:"/animationicon",
       element:<AnimationIcons/>
     },
     {
-      path:"animationbtn",
+      path:"/animationbtn",
       element:<AnimatedBtn/>
     },
     {
-      path:"animationsearch",
+      path:"/animationsearch",
       element:<AnimatedSearch/>
     },
     {
-      path:"arrow",
+      path:"/arrow",
       element:<Arrow/>
     },
     {
-      path:"autocomplete",
+      path:"/autocomplete",
       element:<Autocomplete/>
     },
     {
-      path:"avatar",
+      path:"/avatar",
       element:<AvatarImage/>
     },
     {
-      path:"bigheader",
+      path:"/bigheader",
       element:<BigHeader/>
     },
     {
-      path:"blackwhiteimage",
+      path:"/blackwhiteimage",
       element:<ImageGallery/>
     },
     {
-      path:"changebgcolor",
+      path:"/changebgcolor",
       element:<ChangeBgColor/>
     },
     {
-      path:"changebgscroll",
+      path:"/changebgscroll",
       element:<ChangeBgScroll/>
     },
     {
-      path:"preloader",
+      path:"/preloader",
       element:<Loading/>
     },
     {
-      path:"character-counter",
+      path:"/character-counter",
       element:<CharacterCounter/>
     },
     {
-      path:"chat-msg",
+      path:"/chat-msg",
       element:<ChatWindow/>
     },
     {
-      path:"checkbox",
+      path:"/checkbox",
       element:<CheckCheckbox/>
     },
     {
-      path:"checkboxnumeric",
+      path:"/checkboxnumeric",
       element:<CheckValueIsNumeric/>
     },
     {
-      path:"checkoutform",
+      path:"/checkoutform",
       element:<CheckoutForm/>
     },
     {
-      path:"circlemenu",
+      path:"/circlemenu",
       element:<CircleMenuMob/>
     },
     {
-      path:"glowingstars",
+      path:"/glowingstars",
       element:<GlowingStars/>
+    },
+    {
+      path:"/3dcard",
+      element:<ThreeCardEffort/>
+    },
+    {
+      path:"/3dpin",
+      element:<ThreeDPin/>
+    },
+    {
+      path:"/beams",
+      element:<BeamPage/>
+    },
+    {
+      path:"/griditem",
+      element:<GridItem/>
+    },
+    {
+      path:"/canvas-reveal",
+      element:<CanvasReveal/>
+    },
+    {
+      path:"/car-running",
+      element:<CarRunning/>
     },
   ]);
 }
